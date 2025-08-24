@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About • My Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <header class="navbar blur">
+    <a class="logo" href="index.html">MyProfile</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a class="active" href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-head reveal up">
+      <h1>About Me</h1>
+      <p class="subtitle">A quick story and my core skills.</p>
+    </section>
+
+    <section class="split">
+      <div class="pane reveal up delay-1">
+        <h2>Story</h2>
+        <p>
+          I’m Aditya Maurya — a student who loves programming, problem solving,
+          and building things for the web. I’m exploring computer science in depth,
+          from fundamentals to real projects.
+        </p>
+        <p>
+          I enjoy learning in public and writing about my journey. When I’m not coding,
+          I read, rap, and brainstorm side projects.
+        </p>
+      </div>
+      <div class="pane reveal up delay-2">
+        <h2>Skills</h2>
+        <div class="skill">
+          <span>HTML</span>
+          <div class="bar"><span data-width="92"></span></div>
+        </div>
+        <div class="skill">
+          <span>CSS</span>
+          <div class="bar"><span data-width="88"></span></div>
+        </div>
+        <div class="skill">
+          <span>JavaScript</span>
+          <div class="bar"><span data-width="80"></span></div>
+        </div>
+        <div class="skill">
+          <span>Problem Solving</span>
+          <div class="bar"><span data-width="84"></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline reveal up delay-3">
+      <h2>Timeline</h2>
+      <ul>
+        <li>
+          <div class="dot"></div>
+          <div class="content">
+            <h3>2025 — Portfolio v1</h3>
+            <p>Shipped my first multi-page portfolio with animations.</p>
+          </div>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <div class="content">
+            <h3>2024 — Started Competitive Coding</h3>
+            <p>Solved hundreds of problems to build strong fundamentals.</p>
+          </div>
+        </li>
+        <li>
+          <div class="dot"></div>
+          <div class="content">
+            <h3>2023 — Web Dev Basics</h3>
+            <p>Learned HTML, CSS, and JS and started building small projects.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aditya Maurya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
