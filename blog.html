@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog • My Profile</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap">
+</head>
+<body>
+  <div class="noise-overlay"></div>
+  <header class="navbar blur">
+    <a class="logo" href="index.html">MyProfile</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav-links" id="navLinks">
+      <a href="about.html">About</a>
+      <a class="active" href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+      <button id="themeToggle" class="theme-toggle" aria-label="Toggle theme">🌓</button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="page-head reveal up">
+      <h1>My Blog</h1>
+      <p class="subtitle">Stories, notes, and ideas.</p>
+      <div class="search-wrap">
+        <input id="search" type="search" placeholder="Search posts..." aria-label="Search posts" />
+      </div>
+    </section>
+
+    <section class="blog-grid">
+      <article class="blog-card reveal up hover-raise" data-title="My Journey into Web Development">
+        <h3>My Journey into Web Development</h3>
+        <p>How I started and what I learned while building projects and reading docs.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+
+      <article class="blog-card reveal up hover-raise" data-title="Study Plan: Mastering Data Structures">
+        <h3>Study Plan: Mastering Data Structures</h3>
+        <p>My free, structured roadmap to learn DSA in a consistent way.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+
+      <article class="blog-card reveal up hover-raise" data-title="Productive Habits for Students">
+        <h3>Productive Habits for Students</h3>
+        <p>Small systems that keep me focused — without burnout.</p>
+        <a class="link" href="#">Read more</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Aditya Maurya. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
